@@ -550,7 +550,7 @@ do -- Library
 			end)
 
 			Library:Connection(game:GetService("UserInputService").InputChanged, function(Input)
-				if Input.UserInputType == Enum.UserInputType.MouseMovement then
+				if (Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch) then
 					if slidingalpha then
 						update()
 					end
@@ -930,7 +930,7 @@ do -- Library
 				end)
 
 				Background.InputChanged:Connect(function(Input)
-					if Input.UserInputType == Enum.UserInputType.MouseMovement then
+					if (Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch) then
 						dragInput = Input
 					end
 				end)
@@ -2087,7 +2087,7 @@ do -- Library
 				end
 			end)
 			Library:Connection(game:GetService("UserInputService").InputChanged, function(Input)
-				if Input.UserInputType == Enum.UserInputType.MouseMovement then
+				if (Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch) then
 					if Sliding then
 						ISlide(Input)
 					end
@@ -4047,4 +4047,4 @@ do
 		return notification
 	end
 end
-return Library, Notificationa
+return Library, Notifications

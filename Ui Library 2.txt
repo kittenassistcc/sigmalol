@@ -4044,7 +4044,6 @@ do
 		table.insert(Notifications.Notifs, notification)
 		Notifications:updateNotifsPositions(Position)
 		NewInd.Position = UDim2.new(0,Position.X,0,Position.Y + (table.find(Notifications.Notifs, notification) * 25))
-		return notification
+		return Library, notification
 	end
 end
-return Library

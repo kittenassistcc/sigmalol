@@ -17,7 +17,7 @@ do
 		faces = {
 			{
 				name = "Regular",
-				weight = 200,
+				weight = 100,
 				style = "normal",
 				assetId = getcustomasset("smallest_pixel.ttf")
 			}
